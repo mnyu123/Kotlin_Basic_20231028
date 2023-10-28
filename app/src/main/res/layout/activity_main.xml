@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="15dp"
-    tools:context=".MainActivity">
-
-    <Button
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/gowundodumregular"
-        android:text="로그 찍어보기">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:context=".MainActivity">
 
-    </Button>
+        <Button
+            android:id="@+id/logBtn"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gowundodumregular"
+            android:text="로그 찍어보기">
 
-</LinearLayout>
+        </Button>
+
+        <Button
+            android:id="@+id/toastBtn"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gowundodumregular"
+            android:text="토스트 메시지 띄우기">
+
+        </Button>
+
+    </LinearLayout>
+</layout>
