@@ -64,15 +64,17 @@ class MainActivity : AppCompatActivity() {
 
         binding.ifBtn.setOnClickListener {
             // 사용자의 나이를 val에 저장함.
-            var userAge = 24
+            // 하지만 editText로 입력을 받음.
+            // toString으로 String 형으로 받다가 toInt로 int형으로 형 변환됨.
+            val userAge = binding.edtUserAge.text.toString().toInt()
 
             // 성인 판별
             // if-else는 자바랑 똑~같음
-            if (userAge >= 20) {
-                Toast.makeText(this, "성인 확인.", Toast.LENGTH_SHORT).show()
-            } else {
-                Toast.makeText(this, "애들은 가라", Toast.LENGTH_SHORT).show()
-            }
+//            if (userAge >= 20) {
+//                Toast.makeText(this, "성인 확인.", Toast.LENGTH_SHORT).show()
+//            } else {
+//                Toast.makeText(this, "애들은 가라", Toast.LENGTH_SHORT).show()
+//            }
 
             // 자바의 switch와 똑같은 기능을 하는 "when" 의 문법 사용 예제
             when (userAge) {
@@ -92,5 +94,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+
     }
 }

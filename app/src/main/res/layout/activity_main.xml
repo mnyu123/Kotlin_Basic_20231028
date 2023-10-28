@@ -42,6 +42,15 @@
 
         </Button>
 
+        <EditText
+            android:id="@+id/edtUserAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gowundodumregular"
+            android:hint="나이를 입력하세요.">
+
+        </EditText>
+
         <Button
             android:id="@+id/ifBtn"
             android:layout_width="match_parent"
