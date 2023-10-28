@@ -62,5 +62,25 @@
 
         </Button>
 
+        <EditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gowundodumregular"
+            android:hint="이름을 입력하세요">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/nameBtn"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gowundodumregular"
+            android:text="이름 토스트로 띄우기">
+
+        </Button>
+
     </LinearLayout>
 </layout>

@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             when (userAge) {
                 24 -> {
                     // userAge에 24가 들어있을때 실행하는 코드 내용
-                    Toast.makeText(this, "24살 입니다.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "${userAge}살 입니다.", Toast.LENGTH_SHORT).show()
                 }
 
                 20, 21, 22, 23 -> {
@@ -93,6 +93,13 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this, "25~30세 입니다.", Toast.LENGTH_SHORT).show()
                 }
             }
+        }
+        
+        binding.nameBtn.setOnClickListener { 
+            // 이름 입력칸에 입력된 이름을 토스트로 출력
+            val userName = binding.edtUserName.text.toString()
+
+            Toast.makeText(this, "${userName}님 환영합니다.", Toast.LENGTH_SHORT).show()
         }
 
     }
