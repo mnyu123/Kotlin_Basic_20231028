@@ -46,6 +46,14 @@ class MainActivity : AppCompatActivity() {
             myName = "영재맨"
 
             Toast.makeText(this, myName, Toast.LENGTH_SHORT).show()
+
+            val hakbun : String
+            // 내 학번을 저장할 변수 생성
+            hakbun = "20183277"
+
+            // 학번 변수 변경시도
+//            hakbun = "20183181"
+        // 에러 발생 , val은 상수로 보면 됨. var은 변수
         }
     }
 }
