@@ -54,6 +54,11 @@ class MainActivity : AppCompatActivity() {
             // 학번 변수 변경시도
 //            hakbun = "20183181"
         // 에러 발생 , val은 상수로 보면 됨. var은 변수
+
+            val myBirthYear = 1999
+            // 지금 보면 자료형을 안써줬는데 자동으로 int형인걸로 보고 알아서 타입 설정함.
+            // 실무 팁 : val로 죄다 만들어 놓고 나중에 변경해야하는 것들만 "var"로 변경해서 함.
+
         }
     }
 }
